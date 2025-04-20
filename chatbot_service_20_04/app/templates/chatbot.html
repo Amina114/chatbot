@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>Jira Chatbot</h1>
+  <form id="chatbot-form">
+    <label for="user_input">Enter your text:</label><br>
+    <textarea id="user_input" placeholder="Describe your issue..." rows="5"></textarea><br>
+    <button type="submit">Analyze</button>
+  </form>
+  <div id="response-area"></div>
+</div>
+<script src="/static/js/scripts.js"></script>
+{% endblock %}
